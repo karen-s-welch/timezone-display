@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  width: 15%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+.display{
+  display: block;
+  text-align: center;
+}
+
+.gettime{
+  display: inline-block;
+  text-align: center;
+  margin-left: 14%;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.selected{
+  background-color: pink;
+}
+
+.wrapper{
+  background-color: #86a1cc;
+  border: 2px solid purple;
+}

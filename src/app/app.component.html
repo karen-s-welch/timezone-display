@@ -1,0 +1,31 @@
+<div class = "wrapper">
+  <div class = "display">
+    <h1>U.S. Timezone Display</h1>
+  </div>
+  <!-- Calls function getZoneTime(timezone), binds it to class selected (key) with value temptime -->
+  <div class = "gettime">
+    <button (click)="getZoneTime('PST')" [ngClass]="{selected: temptime === 'PST'}">PST</button>
+  </div>
+
+  <div class = "gettime">
+    <button (click)="getZoneTime('MST')" [ngClass]="{selected: temptime === 'MST'}">MST</button>
+  </div>
+
+  <div class = "gettime">
+    <button (click)="getZoneTime('CST')" [ngClass]="{selected: temptime === 'CST'}">CST</button>
+  </div>
+
+  <div class = "gettime">
+    <button (click)="getZoneTime('EST')" [ngClass]="{selected: temptime === 'EST'}">EST</button>
+  </div>
+
+<!-- This is the "clear" button -->
+  <div class = "gettime">
+    <button (click)="clear()">Clear</button>
+  </div>
+
+  <div class = "display">
+    <h1> {{ time | date: 'medium' }}</h1>
+  </div>
+
+</div> <!-- wrapper end div -->
